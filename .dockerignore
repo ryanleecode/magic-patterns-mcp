@@ -1,0 +1,45 @@
+# Dependencies
+node_modules
+npm-debug.log
+bun.lockb
+
+# Development files
+.git
+.gitignore
+.env
+.envrc
+*.md
+.DS_Store
+
+# Build artifacts
+dist
+tsconfig.tsbuildinfo
+
+# Test and coverage
+.nyc_output
+coverage
+.coverage
+
+# IDE and editor files
+.vscode
+.idea
+*.swp
+*.swo
+
+# OS generated files
+Thumbs.db
+
+# Nix files (if using flake.nix)
+flake.lock
+flake.nix
+
+# Logs
+*.log
+logs
+
+# Temporary files
+*.tmp
+*.temp
+
+# Alternative dockerfile
+Dockerfile.alternative

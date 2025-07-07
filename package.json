@@ -1,0 +1,43 @@
+{
+  "name": "magic-patterns-mcp",
+  "version": "0.0.1",
+  "type": "module",
+  "publishConfig": {
+    "access": "public",
+    "directory": "dist"
+  },
+  "bin": {
+    "magic-patterns-mcp": "./dist/magic-patterns-mcp"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "bun ./scripts/copy-package-json.ts && bun build ./src/main.ts --compile --outfile ./dist/magic-patterns-mcp",
+    "dev": "bun --watch src/main.ts",
+    "prepublishOnly": "pnpm build"
+  },
+  "devDependencies": {
+    "@changesets/changelog-github": "^0.5.1",
+    "@changesets/cli": "^2.29.5",
+    "@effect/ai": "^0.21.10",
+    "@effect/language-service": "^0.23.5",
+    "@effect/platform": "^0.87.7",
+    "@types/node": "^24.0.10",
+    "@types/unist": "^3.0.3",
+    "bun-types": "^1.2.18",
+    "effect": "^3.16.12",
+    "prettier": "^3.6.2",
+    "typescript": "^5.8.3",
+    "undici": "^7.0.0",
+    "unified": "^11.0.5"
+  },
+  "packageManager": "pnpm@10.12.1+sha512.f0dda8580f0ee9481c5c79a1d927b9164f2c478e90992ad268bbb2465a736984391d6333d2c327913578b2804af33474ca554ba29c04a8b13060a717675ae3ac",
+  "dependencies": {
+    "@effect/platform-bun": "^0.72.14",
+    "@effect/platform-node": "^0.89.2"
+  }
+}
