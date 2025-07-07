@@ -39,7 +39,7 @@ const CompiledFile = Schema.Struct({
 })
 
 const ContentBlock = Schema.Struct({
-  type: Schema.String.annotations({
+  type: Schema.Literal('text').annotations({
     description: "The type of content block",
   }),
   text: Schema.String.annotations({
@@ -87,7 +87,7 @@ const createToolkit = () =>
       parameters: {
         prompt: Schema.String.annotations({
           description:
-            "The prompt for the new design. Can be anything - a description of what you want to build, existing React code to modify or improve, or any design request.",
+            "The prompt for the new design. BE AGGRESSIVE with your prompt - provide as much context and detail as possible! Include full React code if modifying existing components, detailed specifications, styling requirements, behavior descriptions, or any other relevant context. The more information you provide, the better the result. No prompt is too long or too detailed.",
         }),
         mode: Schema.optional(Schema.Literal("fast", "best")).annotations({
           description:
