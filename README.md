@@ -1,5 +1,11 @@
 # Magic Patterns MCP Server
 
+### ⚠️ Please use the official Magic Patterns MCP here: [Magic Patterns MCP](https://www.magicpatterns.com/docs/documentation/features/mcp-server/overview) ⚠️
+
+This is original inspiration behind the official MCP. We would recommend everyone to use the official MCP which does not require an API key.
+
+---
+
 A Model Context Protocol (MCP) server that provides tools for creating UI designs and components using the Magic Patterns API. This server enables AI assistants to generate React components, HTML/CSS layouts, and complete web interfaces through natural language prompts.
 
 ## Features
